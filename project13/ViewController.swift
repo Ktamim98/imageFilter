@@ -48,6 +48,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         applyProcessing()
         
         
+        imageView.alpha = 0
+            imageView.image = currentImage
+            UIView.animate(withDuration: 3) {
+                self.imageView.alpha = 1
+            }
+        
+        
     }
     
     
